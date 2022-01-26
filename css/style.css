@@ -1,0 +1,914 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border 0;
+     min-height: 600px;
+    background-color: #841F1A;
+}
+
+h1, h2, h3 , button {
+	font-family: trevor, serif;
+	font-weight: bold;
+}
+
+.info-rows {
+	background-color: #841F1A;
+	min-height: 700px;
+}
+
+.magic {
+	opacity: 0;
+	transition-duration: 2s;
+}
+
+.btn-startagain {
+	position: initial !important;
+	margin-top: 10px;
+    margin-left: 0px !important;
+}
+
+.thanks {
+display: none;
+    position: relative;
+    z-index: 100;
+    color: white;
+    top: 300px;
+}
+
+.thanks h2 {
+	font-size: 4rem;
+	 /*text-shadow: 2px 2px #000000;*/
+}
+
+.wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.btn-col {
+	height: 30px;
+}
+
+#btnOpen {
+	opacity: 0;
+}
+
+.btn-open {
+	/*position: absolute;
+	top: -140px;*/
+	position: fixed;
+    top: 480px;
+    margin-left: -72px;
+	z-index: 10000;
+	background-color: white;
+	color: black;
+	border: 2px solid red;
+	font-weight: bold;
+	border-radius: 20px;
+	font-size: 1.3rem;
+	    padding: 0px 10px;
+
+}
+
+.btn-open:hover {
+	background-color: red;
+	color: white;
+	border: 2px solid white;
+}
+
+.btn-open:focus, .btn-open.focus {
+	background-color: red;
+	color: white;
+	border: 2px solid white;
+}
+
+.btn-open.disabled, .btn-open:disabled {
+  background-color: red;
+	color: white;
+	border: 2px solid white;
+}
+
+.btn-open:not(:disabled):not(.disabled):active, .btn-open:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: red;
+	color: white;
+	border: 2px solid white;
+}
+
+
+.ytplayer, .ytplayer-info {
+	z-index: 1;
+}
+
+.ytplayer {
+display: none;
+margin: 0px 5%;
+min-height: 350px;
+}
+
+
+
+.ytplayer-info {
+	display: none;
+    padding: 0px 40px;
+	min-height: 900px;
+	/*position: relative;
+	top: -50px;*/
+	z-index: 4;
+	background: #841F1A;
+	width: 100%;
+	transition-duration: 0.5s
+	color: white;
+	padding: -1px 58px;
+}
+
+
+.card {
+	background: #FFFFFF;
+	color: black;
+	text-align: left;
+	border-radius: 15px;
+	padding: 40px 20px;
+    margin: 10px auto;
+    max-width: 350px;
+    min-height: 487px;
+    font-size: 20px;
+}
+
+.card h3 {
+	border-bottom: 1px solid red;
+	width: 100%;
+}
+
+
+.card li {
+	list-style: none;
+	padding-bottom: 3px;
+}
+
+.card ul {
+	padding-left: 0px;
+	font-family: mrs-eaves, serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.card a {
+	color: black;
+}
+
+#categoryLink {
+	color: white;
+	margin: 10px;
+}
+
+.categoryBlurb {
+	color: white;
+}
+
+.socialmedia {
+	margin-top: 90px;
+}
+
+.socialmedia i{
+	font-size: 2.5em;
+	padding: 0px 8px;
+}
+
+.socialmedia a{
+	color: white;
+}
+
+.socialmedia a:hover {
+	opacity: 0.5;
+}
+
+.socialmedia p {
+	margin-top: 15px;
+}
+
+.ytplayer-down:after {
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f106";
+    position: relative;
+    top: 2px;
+    padding: 4px;
+    left: 2px;
+}
+
+.ytplayer-up:after {
+	font-family: 'FontAwesome', sans-serif;
+    content: "\f107";
+    position: relative;
+    top: 0px;
+    padding: 4px;
+    left: 2px;
+}
+
+
+
+#categoryLink {
+	cursor: pointer;
+}
+
+.card h3 {
+background-image: url(../img/startstitle.png);
+background-position: right;
+background-repeat: no-repeat;
+    padding: 10px 0px;
+}
+
+/*Animated Home View*/
+
+.curtain1{
+    background-image: url(../img/curtain1.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: right;
+    height: 100%;
+    min-height: 1000px;
+    width: 50.1%;
+     position: fixed;
+    left: 0;
+    z-index: 5;
+}
+
+
+.curtain2{
+    background-image: url(../img/curtain2.png);
+    position: fixed;
+    right: 0;
+     background-position: left;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 50.1%;
+    min-height: 1000px;
+    z-index: 5;
+}
+
+
+.stars img{
+    width: 450px;
+
+    
+}
+.salpies img{
+    width: 360px;
+
+   
+    
+}
+
+
+.twenty img{
+    width: 230px;
+
+   
+    
+}
+.tada img{
+    width: 400px;
+
+    
+}
+.hat img{
+     
+    width: 600px;
+   
+}
+
+
+.right-hand img{
+
+    height: 300px;
+
+}
+
+
+.left-hand img{
+   height: 350px;
+}
+
+
+.light img{
+   width: 600px;
+  
+}
+
+
+.spot img{
+    position: absolute;
+     z-index: 7;
+   width: 600px;
+    top:10vh;
+  margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+    mix-blend-mode: overlay;
+}
+
+.hat{
+    animation: float 1.5s alternate infinite ease-in-out;
+    position: absolute;
+    z-index: 80;
+     margin: auto;
+    width: 600px;
+        margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+  
+    
+}
+
+
+
+
+.tada{
+    animation: float 1.5s alternate infinite ease-in-out ;
+    animation-delay: .3s;
+    position: absolute;
+    z-index: 100;
+    margin: auto;
+    width: 400px;
+        margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+    top:200px
+
+    
+}
+
+
+
+.twenty{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: .6s;
+    position: absolute;
+    z-index: 600;
+    margin: auto;
+    width: 230px;
+        margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+
+    
+}
+
+
+
+.salpies{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: .9s;
+    position: relative;
+    z-index: 300;
+top:80px;
+    margin: auto;
+    width: 360px;
+        margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+
+    
+}
+
+.stars{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: .4s;
+    position: absolute;
+    z-index: 400;
+ top: 200px;
+    margin: auto;
+    width: 450px;
+    margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+
+    
+}
+
+.left-hand{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: 1s;
+    position: absolute;
+    z-index: 100;
+    width: 350px;
+ 
+
+    
+}
+
+.right-hand{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: .6s;
+    position: absolute;
+    z-index: 100;
+ top:150px;
+    width: 350px;
+ 
+
+    
+}
+
+.light{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: .4s;
+    position: relative;
+    z-index: 1;
+bottom: 250px;
+   margin: auto;
+    width:600px;
+  
+
+
+    
+}
+
+
+@keyframes float{
+    
+    from{
+        transform: translateY(-10px);
+        
+       
+    }
+    
+     to{
+        transform: translateY(10px);
+       
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    
+    .wrapper {
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+	
+    .ytplayerinfo-down {
+		position: absolute;
+		top: 92%;
+		transition-duration: 0.5s
+	}
+
+.ytplayerinfo-up {
+	position: absolute;
+	top: 0%;
+	transition-duration: 0.5s
+}
+
+.magic{
+    position: absolute;
+    z-index: 6;
+    width: 1024px;
+    height: 600px;
+    right: 30px;
+    top:10vh;
+    margin-left: auto;
+margin-right: auto;
+left: 0;
+
+    transform: scale(.7)
+   
+   
+}
+
+.left-hand{
+    left: 70px;
+}
+
+.right-hand{
+    right: 5px;
+
+    
+}
+
+}
+
+@media only screen and (min-width: 991px){
+
+.ytplayer {
+height: 100%;
+padding-bottom: 46px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .wrapper {
+		overflow-x: hidden;
+	}
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+
+
+.ytplayerinfo-up {
+	position: absolute;
+    top: 0%;
+	transition-duration: 0.5s
+}
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 991px){
+    
+.ytplayerinfo-down {
+	position: absolute;
+	top: 90%;
+	transition-duration: 0.5s
+}
+
+.magic{
+    position: absolute;
+    z-index: 7;
+    width: 700px;
+    height: 700px;
+    right: 0px;
+    top:10vh;
+    margin-left: auto;
+margin-right: auto;
+left: -50px;
+
+    transform: scale(.7)
+   
+   
+}    
+ 
+ .left-hand{
+        left: -115px;
+  
+ 
+
+    
+}
+
+.right-hand{
+
+    right: -165px;
+
+ 
+
+    
+} 
+    
+.light{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: .4s;
+    position: relative;
+    z-index: 1;
+bottom: 250px;
+   margin: auto;
+    width:600px;
+  
+
+
+    
+}
+    
+}
+
+
+@media only screen and  (max-width: 990px){
+
+
+.ytplayerinfo-up {
+	position: absolute;
+	top: 0%;
+	transition-duration: 0.5s
+}
+
+
+.yt-video {
+	max-height: 300px;
+}
+
+}
+
+
+@media only screen and (max-width: 990px) and (min-width: 768px) {
+
+        .ytplayerinfo-down {
+	position: initial;
+	margin-top: -6px;
+	}
+	
+	.btn-col{
+		height: 0px;
+	}
+}
+
+
+@media only screen and (max-width: 990px) and (min-width: 675px) {
+
+
+.spot img {
+width: 110%;
+    left: -5%;
+    }
+    
+.magic{
+    position: absolute;
+    z-index: 7;
+    width: 700px;
+    height: 700px;
+    right: 0px;
+    top:10vh;
+    margin-left: auto;
+margin-right: auto;
+    left: 0%;
+
+    transform: scale(.7)
+   
+   
+}    
+ 
+ .left-hand{
+        left: -115px;
+  
+ 
+
+    
+}
+
+.right-hand{
+
+    right: -165px;
+
+ 
+
+    
+} 
+    
+.light{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: .4s;
+    position: relative;
+    z-index: 1;
+bottom: 250px;
+   margin: auto;
+    width:600px;
+  
+
+
+    
+}
+}
+
+
+
+@media only screen and (max-width: 674px) and (min-width:551px) {
+
+
+.light {
+	width: 100%;
+}
+
+.light img {
+	width: 100%;
+}
+
+.salpies img {
+	width: 300px;
+}
+
+.salpies {
+	top: 75px !important;
+}
+
+.twenty img {
+	width: 245px;
+}
+
+.tada img {
+	width: 300px;
+	}
+
+.magic{
+    position: absolute;
+    z-index: 7;
+    width: 100%;
+    height: 700px;
+    right: 0px;
+    margin-left: auto;
+margin-right: auto;
+
+    transform: scale(.7)
+   
+   
+}    
+
+.stars img {
+width: 350px;
+}
+
+
+.spot img{
+	width: 90%;
+}
+
+.hat {
+width: 90%;
+}
+
+.hat img {
+width: 100%;
+}
+ 
+ .left-hand{
+         left: -24%;
+    
+}
+
+.left-hand img {
+	height: 325px;
+}
+
+.right-hand img {
+	height: 325px;
+}
+
+.right-hand{
+
+    right: -31%;
+
+ 
+
+    
+} 
+    
+.light{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: .4s;
+    position: relative;
+    z-index: 1;
+bottom: 250px;
+   margin: auto;
+    width:600px;
+  
+
+
+    
+}
+    
+
+}
+
+@media only screen and (max-width: 792px){
+
+.btn-col {
+	height: 0px;
+}
+
+.ytplayerinfo-down {
+    margin-top: -6px;
+}
+
+.thanks {
+	top: 150px !important;
+}
+
+}
+
+@media only screen and (max-width: 550px) {
+
+.btn-open {
+    top: 57%;
+    font-size: 1em;
+    margin-left: -65px;
+}
+
+
+.yt-player {
+	height: auto;
+}
+
+
+.light {
+	width: 100%;
+	    bottom: 28% !important;
+}
+
+.light img {
+	width: 100%;
+}
+
+.salpies img {
+	width: 300px;
+}
+
+.salpies {
+	top: 75px !important;
+}
+
+.twenty img {
+	width: 245px;
+}
+
+.tada img {
+	width: 300px;
+	}
+
+.magic{
+    position: absolute;
+    z-index: 7;
+    width: 100%;
+    height: 600px;
+    right: 0px;
+    margin-left: auto;
+margin-right: auto;
+
+    transform: scale(.6);
+   top: 7%;
+   
+}    
+
+.stars img {
+width: 350px;
+}
+
+
+.spot img{
+	    width: 125%;
+    left: -12%;
+    top: 11vh;
+}
+
+.hat {
+width: 90%;
+}
+
+.hat img {
+width: 100%;
+}
+ 
+ .left-hand{
+         left: -36%;
+    
+}
+
+.right-hand{
+
+right: -46%;
+
+ 
+
+    
+} 
+    
+.light{
+    animation: float 1.5s alternate infinite ease-in-out;
+    animation-delay: .4s;
+    position: relative;
+    z-index: 1;
+bottom: 250px;
+   margin: auto;
+
+
+    
+}
+
+	.left-hand img {
+	height: 200px;
+}
+
+.right-hand img {
+	height: 200px;
+}
+}
+
+@media only screen and (max-height: 600px)
+{
+	.yt-video {
+		height: 600px;
+	}
+}
+
+@media only screen and (max-height: 700px)
+{
+	.yt-video {
+		height: 700px;
+	}
+}
+
+@media only screen and (max-height: 800px)
+{
+	.yt-video {
+		height: 800px;
+	}
+}
+    
+    
+    
