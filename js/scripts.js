@@ -12,14 +12,9 @@ var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("existing-iframe-example", {
     events: {
-      onReady: onPlayerReady,
       onStateChange: onPlayerStateChange,
     },
   });
-}
-function onPlayerReady(event) {
-  document.getElementById("existing-iframe-example").style.borderColor =
-    "#FF6D00";
 }
 
 // Function tracking the YouTube player state
@@ -30,10 +25,9 @@ function onPlayerStateChange(e) {
   }
 
   if (e.data === 0) {
-	  if (debug)
-	  {
-		console.log("ended!");
-	  }
+    if (debug) {
+      console.log("ended!");
+    }
     endVideo();
   }
 }
@@ -41,14 +35,18 @@ function onPlayerStateChange(e) {
 // Function that jumps to a section in video. First checks if the video is already playing, if not then it starts video and plays at given time in seconds
 function seekTo(seconds) {
   if (player.getPlayerState() == 1) {
-	  if (debug) {
-		  console.log("Video currently playing, set timestamp to " + seconds + "seconds.");
-	  }
+    if (debug) {
+      console.log(
+        "Video currently playing, set timestamp to " + seconds + "seconds."
+      );
+    }
     player.seekTo(seconds);
   } else {
-	if (debug) {
-		console.log("Video now starting, set timestamp to " + seconds + "seconds.");
-	}
+    if (debug) {
+      console.log(
+        "Video now starting, set timestamp to " + seconds + "seconds."
+      );
+    }
     ytSeconds = seconds;
     player.playVideo();
   }
@@ -56,9 +54,9 @@ function seekTo(seconds) {
 
 //Function that pauses video
 function pauseVideo() {
-	if (debug) {
-		console.log("Video paused.");
-	}
+  if (debug) {
+    console.log("Video paused.");
+  }
   player.pauseVideo();
 }
 
