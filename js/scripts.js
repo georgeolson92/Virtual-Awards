@@ -66,7 +66,7 @@ function endVideo() {
 
   $(".ytplayer-info").fadeOut("1000", function () {});
 
-  $(".curtainanimation1").each(function () {
+  $(".curtainanimation-left").each(function () {
     $(this).animate(
       {
         left: "0%",
@@ -75,7 +75,7 @@ function endVideo() {
     );
   });
 
-  $(".curtainanimation2").each(function () {
+  $(".curtainanimation-right").each(function () {
     $(this).animate(
       {
         right: "0%",
@@ -118,7 +118,7 @@ $(document).ready(function () {
 
     $(".ytplayer-info").fadeIn("1000", function () {});
 
-    $(".curtainanimation1").each(function () {
+    $(".curtainanimation-left").each(function () {
       if ($(this).offset().left < 0) {
         $(this).css("left", "45%");
       } else if ($(this).offset().left > $("#container").width()) {
@@ -138,7 +138,7 @@ $(document).ready(function () {
       }
     });
 
-    $(".curtainanimation2").each(function () {
+    $(".curtainanimation-right").each(function () {
       if ($(this).offset().right < 0) {
         $(this).css("right", "45%");
       } else if ($(this).offset().right > $("#container").width()) {
