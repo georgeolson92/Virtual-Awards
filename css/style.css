@@ -222,8 +222,8 @@ background-repeat: no-repeat;
 
 /*Animated Home View*/
 
-.curtain1{
-    background-image: url(../img/curtain1.png);
+.curtain-left{
+    background-image: url(../img/curtain-left.png);
     background-repeat: repeat-y;
     background-size: cover;
     background-position: right;
@@ -236,8 +236,8 @@ background-repeat: no-repeat;
 }
 
 
-.curtain2{
-    background-image: url(../img/curtain2.png);
+.curtain-right{
+    background-image: url(../img/curtain-right.png);
     position: fixed;
     right: 0;
      background-position: left;
