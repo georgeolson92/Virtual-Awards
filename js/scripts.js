@@ -1,4 +1,5 @@
 
+// Initialize YouTube embed script
   var tag = document.createElement('script');
   tag.id = 'iframe-demo';
   tag.src = 'https://www.youtube.com/iframe_api';
@@ -19,6 +20,7 @@
   }
   
   
+  // Function tracking the YouTube player state
   function onPlayerStateChange(e)
 {
   if (e.data == 1 && ytSeconds > 0) {
@@ -32,6 +34,7 @@
   }
 }
 
+// Function that jumps to a section in video
 function seekTo(seconds)
 {
   if (player.getPlayerState() == 1) {
@@ -43,12 +46,13 @@ function seekTo(seconds)
   }
 }
 
-
+//Function that pauses video
 function pauseVideo()
 {
 	player.pauseVideo();
 }
 
+//Function that ends the video
 function endVideo()
 {
 	
@@ -90,6 +94,9 @@ function endVideo()
     			
     			
 }
+
+//End of function definitions
+
     	$(document).ready(function() {
     		 $('.magic').delay(800).queue(function (next) { 
   					$(this).css("opacity", "1");
