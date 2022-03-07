@@ -98,62 +98,9 @@
           </div>
         </div>
 
-        <div class="magic">
-            <div class="left-hand">
-			  <img src="img/handleft.png" />
-			</div>
-            <div class="right-hand">
-			  <img src="img/handright.png" />
-			</div>
-            <div class="stars">
-			  <img src="img/stars.gif" />
-			</div>
-            <div class="salpies">
-			  <img src="img/SALPies.png" />
-			</div>
-            <div class="twenty">
-			  <img src="img/2020.png" />
-			</div>
-            <div class="tada">
-			  <img src="img/Ta-Da!.png" />
-			</div>
-            <div class="hat">
-			  <img src="img/hat.png" />
-			</div>
-            <div class="light">
-			  <img src="img/light.png" />
-			</div>
-        </div>
+        <?php include 'templates/magic.php' ;?>
 
-        <div class="ytplayer">
-          <div style="
-              margin: 0px;
-              padding: 0px;
-              overflow: hidden;
-              height: 100%;
-              min-height: 350px;
-            "
-          >
-            <iframe
-              id="video-iframe"
-              frameborder="0"
-              style="
-                overflow: hidden;
-                height: 98%;
-                width: 100%;
-                min-height: 350px;
-              "
-              height="98%"
-              width="100%"
-              class="yt-video"
-              src="https://www.youtube.com/embed/036ZTk9E-gY?enablejsapi=1"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-        </div>
+        <?php include 'templates/player.php';?>
 
         <div class="row">
           <div class="col-lg-12 btn-col">
@@ -166,104 +113,7 @@
         <div class="ytplayer-info ytplayerinfo-down">
           <div class="curtain1" style="left: -45%"></div>
           <div class="curtain2" style="right: -45%"></div>
-          <div class="info-rows">
-            <div class="row">
-              <div class="col-lg-12">
-                <h2 id="categoryLink" onclick="pauseVideo()">Categories</h2>
-                <p class="categoryBlurb">
-                  Click on one of the links below to skip to a different part of
-                  the video.
-                </p>
-              </div>
-              <div class="col-lg-4">
-                <div class="card">
-                  <h3>Awards</h3>
-                  <ul>
-                    <li>
-                      <a href="#" onclick="seekTo(20);">Emerging Leader</a>
-                    </li>
-                    <li>
-                      <a href="#" onclick="seekTo(110);">Breakout Student Organization</a>
-                    </li>
-                    <li>
-                      <a href="#" onclick="seekTo(30);">Student Employee</a>
-                    </li>
-                    <li>
-                      <a href="#" onclick="seekTo(105);">Wilma Morrison Award</a>
-                    </li>
-                    <li>
-						<a href="#" onclick="seekTo(50);">Outstanding Advocate</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(200);">Event of the Year</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(320);">Community Partner of the Year</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(500);">Student Leader of the Year</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(20);">Magic Act #4/Student Group of the Year Award</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card">
-                  <h3>Magic Acts</h3>
-                  <ul>
-                    <li>
-						<a href="#" onclick="seekTo(0);">Magic Act #1</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">Magic Act #2</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">Magic Act #3</a>
-					</li>
-                    <li>
-                      <a href="#" onclick="seekTo(0);">Magic Act #4/Student Group of the Year Award</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card">
-                  <h3>Ads & More</h3>
-                  <ul>
-                    <li>
-						<a href="#" onclick="seekTo(0);">Tik Tok video</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">Student Orgs</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">ASPSU</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">Student Media</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">Photo Montage</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">SSC</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">SCEC</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">SOS Employee</a>
-					</li>
-                    <li>
-						<a href="#" onclick="seekTo(0);">Some Good News</a>
-					</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <?php include 'templates/categories.php';?>
         </div>
       </div>
     </main>
