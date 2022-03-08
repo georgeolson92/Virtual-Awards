@@ -1,3 +1,4 @@
+/* GENERAL STYLES */
 html, body {
     margin: 0;
     padding: 0;
@@ -9,34 +10,6 @@ html, body {
 h1, h2, h3 , button {
 	font-family: trevor, serif;
 	font-weight: bold;
-}
-
-.info-rows {
-	background-color: #841F1A;
-	min-height: 700px;
-}
-
-.magic {
-	opacity: 0;
-	transition-duration: 2s;
-}
-
-.btn-startagain {
-	position: initial !important;
-	margin-top: 10px;
-    margin-left: 0px !important;
-}
-
-.thanks {
-    display: none;
-    position: relative;
-    z-index: 100;
-    color: white;
-    top: 300px;
-}
-
-.thanks h2 {
-	font-size: 4rem;
 }
 
 .wrapper {
@@ -92,6 +65,7 @@ h1, h2, h3 , button {
 	border: 2px solid white;
 }
 
+/* YOUTUBE PLAYER */
 .ytplayer, .ytplayer-info {
 	z-index: 1;
 }
@@ -112,27 +86,6 @@ h1, h2, h3 , button {
 	transition-duration: 0.5s;
 	color: white;
 	padding: -1px 58px;
-}
-
-.socialmedia {
-	margin-top: 90px;
-}
-
-.socialmedia i {
-	font-size: 2.5em;
-	padding: 0px 8px;
-}
-
-.socialmedia a {
-	color: white;
-}
-
-.socialmedia a:hover {
-	opacity: 0.5;
-}
-
-.socialmedia p {
-	margin-top: 15px;
 }
 
 /* CATEGORIES CARDS */  
@@ -178,6 +131,11 @@ h1, h2, h3 , button {
 	color: white;
 }
 
+.info-rows {
+	background-color: #841F1A;
+	min-height: 700px;
+}
+
 .ytplayer-down:after {
     font-family: 'FontAwesome', sans-serif;
     content: "\f106";
@@ -205,6 +163,46 @@ h1, h2, h3 , button {
     background-position: right;
     background-repeat: no-repeat;
     padding: 10px 0px;
+}
+
+/* ENDING SECTION */
+.thanks {
+    display: none;
+    position: relative;
+    z-index: 100;
+    color: white;
+    top: 300px;
+}
+
+.thanks h2 {
+	font-size: 4rem;
+}
+
+.socialmedia {
+	margin-top: 90px;
+}
+
+.socialmedia i {
+	font-size: 2.5em;
+	padding: 0px 8px;
+}
+
+.socialmedia a {
+	color: white;
+}
+
+.socialmedia a:hover {
+	opacity: 0.5;
+}
+
+.socialmedia p {
+	margin-top: 15px;
+}
+
+.btn-startagain {
+	position: initial !important;
+	margin-top: 10px;
+    margin-left: 0px !important;
 }
 
 /* INTRO ANIMATION STYLES */
@@ -369,6 +367,11 @@ h1, h2, h3 , button {
     bottom: 250px;
     margin: auto;
     width:600px;
+}
+
+.magic {
+	opacity: 0;
+	transition-duration: 2s;
 }
 
 @keyframes float{
