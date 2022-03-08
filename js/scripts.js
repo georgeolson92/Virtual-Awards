@@ -3,7 +3,7 @@ var debug = false;
 
 // Initialize YouTube embed script
 var tag = document.createElement("script");
-tag.id = "iframe-demo";
+tag.id = "iframe-api";
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -26,7 +26,7 @@ function onPlayerStateChange(e) {
 
   if (e.data === 0) {
     if (debug) {
-      console.log("ended!");
+      console.debug("ended!");
     }
     endVideo();
   }
@@ -36,14 +36,14 @@ function onPlayerStateChange(e) {
 function seekTo(seconds) {
   if (player.getPlayerState() == 1) {
     if (debug) {
-      console.log(
+      console.debug(
         "Video currently playing, set timestamp to " + seconds + "seconds."
       );
     }
     player.seekTo(seconds);
   } else {
     if (debug) {
-      console.log(
+      console.debug(
         "Video now starting, set timestamp to " + seconds + "seconds."
       );
     }
@@ -55,7 +55,7 @@ function seekTo(seconds) {
 //Function that pauses video
 function pauseVideo() {
   if (debug) {
-    console.log("Video paused.");
+    console.debug("Video paused.");
   }
   player.pauseVideo();
 }
