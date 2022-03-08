@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    border 0;
+    border: 0;
      min-height: 600px;
     background-color: #841F1A;
 }
@@ -114,6 +114,28 @@ h1, h2, h3 , button {
 	padding: -1px 58px;
 }
 
+.socialmedia {
+	margin-top: 90px;
+}
+
+.socialmedia i {
+	font-size: 2.5em;
+	padding: 0px 8px;
+}
+
+.socialmedia a {
+	color: white;
+}
+
+.socialmedia a:hover {
+	opacity: 0.5;
+}
+
+.socialmedia p {
+	margin-top: 15px;
+}
+
+/* CATEGORIES CARDS */  
 .card {
 	background: #FFFFFF;
 	color: black;
@@ -156,27 +178,6 @@ h1, h2, h3 , button {
 	color: white;
 }
 
-.socialmedia {
-	margin-top: 90px;
-}
-
-.socialmedia i {
-	font-size: 2.5em;
-	padding: 0px 8px;
-}
-
-.socialmedia a {
-	color: white;
-}
-
-.socialmedia a:hover {
-	opacity: 0.5;
-}
-
-.socialmedia p {
-	margin-top: 15px;
-}
-
 .ytplayer-down:after {
     font-family: 'FontAwesome', sans-serif;
     content: "\f106";
@@ -206,8 +207,7 @@ h1, h2, h3 , button {
     padding: 10px 0px;
 }
 
-/*Animated Home View*/
-
+/* INTRO ANIMATION STYLES */
 .curtain-left {
     background-image: url(../img/curtain-left.png);
     background-repeat: repeat-y;
@@ -300,7 +300,7 @@ h1, h2, h3 , button {
     margin-right: auto;
     left: 0;
     right: 0;
-    top:200px;
+    top: 200px;
 }
 
 .twenty {
@@ -381,7 +381,9 @@ h1, h2, h3 , button {
     }
 }
 
+/* RESPONSIVE MEDIA QUERIES */
 
+/* Desktop down to moderate / small desktop */
 @media only screen and (min-width: 1024px) {
     .wrapper {
 		overflow-x: hidden;
@@ -391,13 +393,13 @@ h1, h2, h3 , button {
     .ytplayerinfo-down {
 		position: absolute;
 		top: 92%;
-		transition-duration: 0.5s
+		transition-duration: 0.5s;
 	}
 
     .ytplayerinfo-up {
         position: absolute;
         top: 0%;
-        transition-duration: 0.5s
+        transition-duration: 0.5s;
     }
 
     .magic {
@@ -410,7 +412,7 @@ h1, h2, h3 , button {
         margin-left: auto;
         margin-right: auto;
         left: 0;
-        transform: scale(.7)
+        transform: scale(.7);
     }
 
     .left-hand {
@@ -422,6 +424,7 @@ h1, h2, h3 , button {
     }
 }
 
+/* Down to tablet */
 @media only screen and (min-width: 991px) {
     .ytplayer {
         height: 100%;
@@ -429,27 +432,28 @@ h1, h2, h3 , button {
     }
 }
 
+/* Up to desktop */
 @media only screen and (max-width: 1024px) {
     .wrapper {
 		overflow-x: hidden;
 	}
 }
 
-
+/* Desktop to tablet */
 @media only screen and (max-width: 1024px) and (min-width: 768px){
     .ytplayerinfo-up {
         position: absolute;
         top: 0%;
-        transition-duration: 0.5s
+        transition-duration: 0.5s;
     }
 }
 
-
+/* Small / Moderately sized desktop screens */
 @media only screen and (max-width: 1024px) and (min-width: 991px) {
     .ytplayerinfo-down {
         position: absolute;
         top: 90%;
-        transition-duration: 0.5s
+        transition-duration: 0.5s;
     }
 
     .magic {
@@ -462,7 +466,7 @@ h1, h2, h3 , button {
         margin-left: auto;
         margin-right: auto;
         left: -50px;
-        transform: scale(.7)
+        transform: scale(.7);
     }    
  
     .left-hand {
@@ -484,7 +488,7 @@ h1, h2, h3 , button {
     } 
 }
 
-
+/* Tablet and smaller */
 @media only screen and  ( max-width: 990px ) 
 {
     .ytplayerinfo-up {
@@ -498,7 +502,7 @@ h1, h2, h3 , button {
     }
 }
 
-
+/* Slightler larger than Tablet support */
 @media only screen and (max-width: 990px) and (min-width: 768px) 
 {
     .ytplayerinfo-down {
@@ -511,7 +515,7 @@ h1, h2, h3 , button {
 	}
 }
 
-
+/* Tablet */
 @media only screen and (max-width: 990px) and (min-width: 675px) 
 {
     .spot img {
@@ -529,7 +533,7 @@ h1, h2, h3 , button {
         margin-left: auto;
         margin-right: auto;
         left: 0%;
-        transform: scale(.7)
+        transform: scale(.7);
     }    
  
     .left-hand {
@@ -547,10 +551,11 @@ h1, h2, h3 , button {
         z-index: 1;
         bottom: 250px;
         margin: auto;
-        width: 600px; 
+        width: 600px;
     }
 }
 
+/* Tablet */
 @media only screen and (max-width: 674px) and (min-width:551px) 
 {
     .light {
@@ -631,6 +636,7 @@ h1, h2, h3 , button {
     }
 }
 
+/* Tablet and below */
 @media only screen and (max-width: 792px)
 {
     .btn-col {
@@ -646,6 +652,7 @@ h1, h2, h3 , button {
     }
 }
 
+/* Mobile */
 @media only screen and (max-width: 550px) 
 {
     .btn-open {
@@ -739,6 +746,7 @@ h1, h2, h3 , button {
     }
 }
 
+/* All following media queries are for different screen heights on different devices */
 @media only screen and (max-height: 600px)
 {
 	.yt-video {
