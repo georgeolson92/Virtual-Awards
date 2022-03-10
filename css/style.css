@@ -79,7 +79,7 @@ h1, h2, h3 , button {
 
 .ytplayer-info {
 	display: none;
-    padding: 0px 40px;
+    padding: 0px 65px;
 	min-height: 900px;
 	z-index: 4;
 	background: #841F1A;
