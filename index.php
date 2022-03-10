@@ -31,7 +31,6 @@
   </head>
 
   <!-- Body -->
-
   <body class="text-center">
     <main role="main" class="inner cover">
       <div class="wrapper">
@@ -72,9 +71,8 @@
           </div>
         </div>
 
+        <!-- includes ytplayerinfo-down class by default to keep it down from view until button clicked -->
         <div class="ytplayer-info ytplayerinfo-down">
-          <div class="curtain1" style="left: -45%"></div>
-          <div class="curtain2" style="right: -45%"></div>
           <?php include 'templates/categories.php'; ?>
         </div>
       </div>
