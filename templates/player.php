@@ -1,3 +1,4 @@
+<?php phpinfo(); ?>
 <div class="ytplayer">
     <div style="
               margin: 0px;

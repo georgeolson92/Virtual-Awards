@@ -1,3 +1,4 @@
+<?php phpinfo(); ?>
 <div class="info-rows">
     <div class="row">
         <div class="col-lg-12">
