@@ -17,7 +17,7 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-// Function tracking the YouTube player state
+// Function tracking the YouTube player state, also tracks when user changes the time in the video
 function onPlayerStateChange(e) {
   if (e.data == 1 && ytSeconds > 0) {
     e.target.seekTo(ytSeconds);
@@ -26,7 +26,7 @@ function onPlayerStateChange(e) {
 
   if (e.data === 0) {
     if (debug) {
-      console.debug("ended!");
+      console.debug("Video has ended");
     }
     endVideo();
   }
@@ -60,6 +60,22 @@ function pauseVideo() {
   player.pauseVideo();
 }
 
+//Function to open the categories section by adding & removing certain CSS classes
+function openCategories() {
+  $("#categoryLink").removeClass("ytplayer-up");
+  $("#categoryLink").addClass("ytplayer-down");
+  $(".ytplayer-info").removeClass("ytplayerinfo-up");
+  $(".ytplayer-info").addClass("ytplayerinfo-down");
+}
+
+//Function to close the categories section by adding & removing certain CSS classes
+function closeCategories() {
+  $("#categoryLink").removeClass("ytplayer-down");
+  $("#categoryLink").addClass("ytplayer-up");
+  $(".ytplayer-info").removeClass("ytplayerinfo-down");
+  $(".ytplayer-info").addClass("ytplayerinfo-up");
+}
+
 //Function that ends the video
 function endVideo() {
   $(".ytplayer").fadeOut("1000", function () {});
@@ -84,16 +100,14 @@ function endVideo() {
     );
   });
 
+  //Now fade in 'Thank You' section of the site
   $(".thanks").fadeIn("1000", function () {});
-
   $(".sharethis-inline-share-buttons .st-btn").fadeIn("1000", function () {});
-
   $(".sharethis-inline-share-buttons .st-label").fadeIn("1000", function () {});
 }
 
-//End of function definitions
-
-$(document).ready(function () {
+// Function to handle the initial hiding & styles of page when it loads
+function initializePage() {
   $(".magic")
     .delay(800)
     .queue(function (next) {
@@ -106,17 +120,24 @@ $(document).ready(function () {
   $(".player-info").hide();
   $(".ytplayer-info").hide();
   $("#categoryLink").addClass("ytplayer-down");
+}
+
+// Function to load hidden youtube player with css properties and js transitions, initiated by button click event below
+function initializePlayer() {
+  $(".magic").css("opacity", "0");
+  $("#btnOpen").css("opacity", "0");
+  $(".spot").hide();
+  $(".ytplayer").fadeIn("1000", function () {});
+  $(".ytplayer-info").fadeIn("1000", function () {});
+}
+
+//End of function definitions
+
+$(document).ready(function () {
+  initializePage();
 
   $("#btnOpen").click(function () {
-    $(".magic").css("opacity", "0");
-
-    $("#btnOpen").css("opacity", "0");
-
-    $(".spot").hide();
-
-    $(".ytplayer").fadeIn("1000", function () {});
-
-    $(".ytplayer-info").fadeIn("1000", function () {});
+    initializePlayer();
 
     $(".curtainanimation-left").each(function () {
       if ($(this).offset().left < 0) {
@@ -167,31 +188,18 @@ $(document).ready(function () {
   });
 
   $(".card a").click(function () {
-    $("#categoryLink").removeClass("ytplayer-up");
-    $("#categoryLink").addClass("ytplayer-down");
-    $(".ytplayer-info").removeClass("ytplayerinfo-up");
-    $(".ytplayer-info").addClass("ytplayerinfo-down");
+    openCategories();
   });
 
   $("#categoryLink").click(function () {
     if ($("#categoryLink").hasClass("ytplayer-down")) {
-      $("#categoryLink").removeClass("ytplayer-down");
-      $("#categoryLink").addClass("ytplayer-up");
-      $(".ytplayer-info").removeClass("ytplayerinfo-down");
-      $(".ytplayer-info").addClass("ytplayerinfo-up");
+      closeCategories();
     } else {
-      $("#categoryLink").removeClass("ytplayer-up");
-      $("#categoryLink").addClass("ytplayer-down");
-      $(".ytplayer-info").removeClass("ytplayerinfo-up");
-      $(".ytplayer-info").addClass("ytplayerinfo-down");
+      openCategories();
     }
   });
 
   $(".ytplayer-up").click(function () {
-    $("#categoryLink").removeClass("ytplayer-up");
-    $("#categoryLink").addClass("ytplayer-down");
-
-    $(".ytplayer-info").removeClass("ytplayerinfo-up");
-    $(".ytplayer-info").addClass("ytplayerinfo-down");
+    openCategories();
   });
 });
