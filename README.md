@@ -25,7 +25,14 @@ This template contains markup for the YouTube video player which also uses the Y
 
 ## How to add Video Player links
 Open /templates/categories.php and scroll down to the divs containing the 'card' class and you will see some <a> tags containing on click events. They will look like this:
+```
         onclick="seekTo(20);"
+```
 The number being passed as an argument is the total number of seconds to skip from the beginning of the video. This may require some calculation using the timestamps provided in the YouTube player. When you determine the value of how many seconds you want to skip in the video, add that number as the value.
+
+## How to replace opening animation
+The opening animation is created using HTML elements in the /templates/magic.php file, CSS in the /css/style.css file and JS scirpts in /js/scripts.js. 
+In the magic.php file, you can replace all of the html content with any kind of html content you wish to use to display your opening animation. 
+You can then find all of the styles for the animation under '/* INTRO ANIMATION STYLES */' in the CSS file, which were automatically generated when creating the animation in Adobe XD. You can use whatever program you want to create the animation and use the generated styles to replace the Intro Animation section of the CSS file. 
 
 

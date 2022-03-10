@@ -206,7 +206,7 @@ h1, h2, h3 , button {
     margin-left: 0px !important;
 }
 
-/* INTRO ANIMATION STYLES */
+/* CURTAINS */
 .curtain-left {
     background-image: url(../img/curtain-left.png);
     background-repeat: repeat-y;
@@ -232,6 +232,8 @@ h1, h2, h3 , button {
     min-height: 1000px;
     z-index: 5;
 }
+
+/* INTRO ANIMATION STYLES */
 
 .stars img {
     width: 450px; 
