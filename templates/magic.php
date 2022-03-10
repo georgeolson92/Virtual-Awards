@@ -1,3 +1,4 @@
+<?php phpinfo(); ?>
 <div class="magic">
     <div class="left-hand">
         <img src="img/handleft.png" alt="left hand in SALPies logo animation"/>
