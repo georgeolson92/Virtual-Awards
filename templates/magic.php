@@ -11,7 +11,7 @@
     <div class="salpies">
         <img src="img/SALPies.png" alt="SALPies logo"/>
     </div>
-    <div class="twenty">
+    <div class="twentytwenty">
         <img src="img/2020.png" alt="year 2020 for SALPies logo"/>
     </div>
     <div class="tada">
