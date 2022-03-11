@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="George Olson, 2020-2022" />
-    <title>SALPies 2020: Ta-Da!</title>
+    <title>Virtual Magic Awards 2022</title>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/715c69a354.js" crossorigin="anonymous"></script>
