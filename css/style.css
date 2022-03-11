@@ -30,7 +30,7 @@ h1, h2, h3 , button {
 .btn-open {
 	position: fixed;
     top: 480px;
-    margin-left: -72px;
+    margin-left: -85px;
 	z-index: 10000;
 	background-color: white;
 	color: black;
@@ -235,6 +235,20 @@ h1, h2, h3 , button {
 
 /* INTRO ANIMATION STYLES */
 
+.magic h1 {
+    color: white;
+    text-shadow: 2px -2px 4px #c21d23;
+}
+
+.salpies h1 {
+    font-size: 4em !important;
+}
+
+.twentytwenty h1 {
+    font-size: 6em !important;
+    text-transform: uppercase;
+}
+
 .stars img {
     width: 450px; 
 }
@@ -310,7 +324,7 @@ h1, h2, h3 , button {
     position: absolute;
     z-index: 600;
     margin: auto;
-    width: 230px;
+    /*width: 230px;*/
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -322,9 +336,9 @@ h1, h2, h3 , button {
     animation-delay: .9s;
     position: relative;
     z-index: 300;
-    top:80px;
+    top:20px;
     margin: auto;
-    width: 360px;
+    /*width: 360px;*/
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -413,7 +427,7 @@ h1, h2, h3 , button {
         z-index: 6;
         width: 1024px;
         height: 600px;
-        right: 30px;
+        right: 0px;
         top: 10vh;
         margin-left: auto;
         margin-right: auto;
@@ -422,11 +436,11 @@ h1, h2, h3 , button {
     }
 
     .left-hand {
-        left: 70px;
+        left: 45px;
     }
 
     .right-hand {
-        right: 5px; 
+        right: 60px; 
     }
 }
 
@@ -547,7 +561,7 @@ h1, h2, h3 , button {
     }
 
     .right-hand {
-        right: -165px;
+        right: -89px;
     } 
     
     .light {
@@ -576,9 +590,9 @@ h1, h2, h3 , button {
         width: 300px;
     }
 
-    .salpies {
+    /*.salpies {
         top: 75px !important;
-    }
+    }*/
 
     .twentytwenty img {
         width: 245px;
@@ -628,7 +642,7 @@ h1, h2, h3 , button {
     }
 
     .right-hand {
-        right: -31%;
+        right: -20%;
     } 
     
     .light {
@@ -684,9 +698,9 @@ h1, h2, h3 , button {
         width: 300px;
     }
 
-    .salpies {
+    /*.salpies {
         top: 75px !important;
-    }
+    }*/
 
     .twentytwenty img {
         width: 245px;
@@ -727,11 +741,11 @@ h1, h2, h3 , button {
     }
  
     .left-hand {
-        left: -36%;
+        left: -40%;
     }
 
     .right-hand {
-        right: -46%;
+        right: -35%;
     } 
     
     .light {

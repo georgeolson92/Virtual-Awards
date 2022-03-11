@@ -59,9 +59,9 @@
           </div>
         </div>
 
-        <?php include 'templates/magic.php'; ?>
+        <?php include 'templates/magic.html'; ?>
 
-        <?php include 'templates/player.php'; ?>
+        <?php include 'templates/player.html'; ?>
 
         <div class="row">
           <div class="col-lg-12 btn-col">
@@ -73,7 +73,7 @@
 
         <!-- includes ytplayerinfo-down class by default to keep it down from view until button clicked -->
         <div class="ytplayer-info ytplayerinfo-down">
-          <?php include 'templates/categories.php'; ?>
+          <?php include 'templates/categories.html'; ?>
         </div>
       </div>
     </main>
