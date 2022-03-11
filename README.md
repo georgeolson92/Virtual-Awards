@@ -16,7 +16,7 @@ This project is built in a series of PHP templates that contain the source code 
 1. **index.php** - This template is the index page that defines the HTML markup and includes links to the other templates
 2. **categories.php** - This template contains markup for the categories section below the YouTube player, where you can add links that will skip to certain parts of the video.
 3. **magic.php** - This template contains all of the elements of the initial animation that appears when loading. 
-4. **player.php** - This template contains markup for the YouTube video player which also uses the YouTube API to implement interactive functionality. 
+4. **player.php** - This template contains markup for the YouTube video player which also uses the YouTube API to implement interactive functionality. Currently, the player is set to a placeholder video that can be replaced by changing the src value in the iframe with id value 'video-iframe'.
 
 ## How to add Video Player links
 Open /templates/categories.php and scroll down to the divs containing the 'card' class and you will see some <a> tags containing on click events. They will look like this:
