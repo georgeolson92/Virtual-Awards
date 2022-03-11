@@ -240,11 +240,11 @@ h1, h2, h3 , button {
     text-shadow: 2px -2px 4px #c21d23;
 }
 
-.salpies h1 {
+.awards-title h1 {
     font-size: 4em !important;
 }
 
-.twentytwenty h1 {
+.awards-subtitle h1 {
     font-size: 6em !important;
     text-transform: uppercase;
 }
@@ -253,15 +253,15 @@ h1, h2, h3 , button {
     width: 450px; 
 }
 
-.salpies img {
+.awards-title img {
     width: 360px;
 }
 
-.twentytwenty img {
+.awards-subtitle img {
     width: 230px; 
 }
 
-.tada img {
+.year img {
     width: 400px;
 }
 .hat img { 
@@ -304,7 +304,7 @@ h1, h2, h3 , button {
     right: 0;
 }
 
-.tada {
+.year {
     animation: float 1.5s alternate infinite ease-in-out ;
     animation-delay: .3s;
     position: absolute;
@@ -318,7 +318,7 @@ h1, h2, h3 , button {
     top: 200px;
 }
 
-.twentytwenty {
+.awards-subtitle {
     animation: float 1.5s alternate infinite ease-in-out;
     animation-delay: .6s;
     position: absolute;
@@ -331,7 +331,7 @@ h1, h2, h3 , button {
     right: 0;   
 }
 
-.salpies {
+.awards-title {
     animation: float 1.5s alternate infinite ease-in-out;
     animation-delay: .9s;
     position: relative;
@@ -586,19 +586,19 @@ h1, h2, h3 , button {
         width: 100%;
     }
 
-    .salpies img {
+    .awards-title img {
         width: 300px;
     }
 
-    /*.salpies {
+    /*.awards-title {
         top: 75px !important;
     }*/
 
-    .twentytwenty img {
+    .awards-subtitle img {
         width: 245px;
     }
 
-    .tada img {
+    .year img {
         width: 300px;
     }
 
@@ -694,19 +694,19 @@ h1, h2, h3 , button {
         width: 100%;
     }
 
-    .salpies img {
+    .awards-title img {
         width: 300px;
     }
 
-    /*.salpies {
+    /*.awards-title {
         top: 75px !important;
     }*/
 
-    .twentytwenty img {
+    .awards-subtitle img {
         width: 245px;
     }
 
-    .tada img {
+    .year img {
         width: 300px;
     }
 
