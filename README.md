@@ -33,6 +33,6 @@ In the magic.php file, you can replace all of the html content with any kind of 
 You can then find all of the styles for the animation under '/* INTRO ANIMATION STYLES */' in the CSS file, which were automatically generated when creating the animation in Adobe XD. You can use whatever program you want to create the animation and use the generated styles to replace the Intro Animation section of the CSS file. 
 
 ## Credits
-Design & Assets: John Rojas via PSU Student Media
-Source Code: George Olson via PSU Student Media
+1. Design & Assets: John Rojas via PSU Student Media
+2. Source Code: George Olson via PSU Student Media
 
