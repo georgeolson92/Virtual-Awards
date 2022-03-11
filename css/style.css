@@ -450,6 +450,10 @@ h1, h2, h3 , button {
         height: 100%;
         padding-bottom: 46px;
     }
+
+    .magic .year h1 {
+        font-size: 4em;
+    }
 }
 
 /* Up to desktop */
