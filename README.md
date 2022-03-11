@@ -7,7 +7,7 @@ Single-page web project for a virtual awards ceremony hosted via embedded YouTub
 1. Make sure you have PHP installed on your machine
 2. Download XAMPP if not already downloaded. Start the Apache Web Server in the manager application.
 3. Navigate to your XAMPP /htdocs folder and clone git repository
-4. You should now be able to load the website at http://localhost/virtualmagic/
+4. You should now be able to load the website at http://localhost/virtual-awards/
 
 ## Code Organization
 
@@ -16,7 +16,7 @@ This project is built in a series of PHP templates that contain the source code 
 1. **index.php** - This template is the index page that defines the HTML markup and includes links to the other templates
 2. **categories.php** - This template contains markup for the categories section below the YouTube player, where you can add links that will skip to certain parts of the video.
 3. **magic.php** - This template contains all of the elements of the initial animation that appears when loading. 
-4. **player.php** - This template contains markup for the YouTube video player which also uses the YouTube API to implement interactive functionality. 
+4. **player.php** - This template contains markup for the YouTube video player which also uses the YouTube API to implement interactive functionality. Currently, the player is set to a placeholder video that can be replaced by changing the src value in the iframe with id value 'video-iframe'.
 
 ## How to add Video Player links
 Open /templates/categories.php and scroll down to the divs containing the 'card' class and you will see some <a> tags containing on click events. They will look like this:
@@ -33,6 +33,6 @@ In the magic.php file, you can replace all of the html content with any kind of 
 You can then find all of the styles for the animation under '/* INTRO ANIMATION STYLES */' in the CSS file, which were automatically generated when creating the animation in Adobe XD. You can use whatever program you want to create the animation and use the generated styles to replace the Intro Animation section of the CSS file. 
 
 ## Credits
-Design & Assets: John Rojas via PSU Student Media
-Source Code: George Olson via PSU Student Media
+- **Design & Assets:** John Rojas via PSU Student Media
+- **Source Code:** George Olson via PSU Student Media
 

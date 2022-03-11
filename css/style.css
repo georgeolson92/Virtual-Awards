@@ -30,7 +30,7 @@ h1, h2, h3 , button {
 .btn-open {
 	position: fixed;
     top: 480px;
-    margin-left: -85px;
+    margin-left: -72px;
 	z-index: 10000;
 	background-color: white;
 	color: black;
@@ -449,6 +449,10 @@ h1, h2, h3 , button {
     .ytplayer {
         height: 100%;
         padding-bottom: 46px;
+    }
+
+    .magic .year h1 {
+        font-size: 4em;
     }
 }
 
