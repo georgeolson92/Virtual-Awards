@@ -7,7 +7,7 @@ Single-page web project for a virtual awards ceremony hosted via embedded YouTub
 1. Make sure you have PHP installed on your machine
 2. Download XAMPP if not already downloaded. Start the Apache Web Server in the manager application.
 3. Navigate to your XAMPP /htdocs folder and clone git repository
-4. You should now be able to load the website at http://localhost/virtualmagic/
+4. You should now be able to load the website at http://localhost/virtual-awards/
 
 ## Code Organization
 
